@@ -1,160 +1,134 @@
-# RAG Evaluation Framework (Pinecone + LangChain + RAGAS)
+# RAG Evaluation Framework
 
-A modular, reproducible portfolio project designed to evaluate and compare Retrieval-Augmented Generation (RAG) performance across **2 chunking strategies** and **2 embedding models** using **Pinecone** vector storage and **RAGAS** evaluation metrics.
+A Python project to test how different chunking strategies and embedding models affect a Retrieval-Augmented Generation (RAG) system. It uses LangChain for the pipeline, Pinecone for vector storage, and RAGAS metrics to evaluate the results.
 
----
+## What this project does
 
-## 📌 Project Overview & Goal
+I wanted to compare different ways of splitting documents and generating embeddings to see which combination retrieves better context for a RAG application.
 
-When building RAG systems for production, chunking and embedding model choices dramatically impact retrieval quality and downstream generation accuracy. This pipeline systematically benchmarked **4 combinations**:
+I tested four configurations using two chunking strategies and two embedding models.
 
-1. **`fixed_minilm`**: Fixed-size Chunking (400 chars) + `sentence-transformers/all-MiniLM-L6-v2` (384d)
-2. **`recursive_minilm`**: Recursive Character Chunking (400 chars) + `sentence-transformers/all-MiniLM-L6-v2` (384d)
-3. **`fixed_openai`**: Fixed-size Chunking (400 chars) + `text-embedding-3-small` (1536d)
-4. **`recursive_openai`**: Recursive Character Chunking (400 chars) + `text-embedding-3-small` (1536d)
+| Configuration | Chunking | Embedding Model |
+|---|---|---|
+| `fixed_minilm` | Fixed-size (400 characters) | MiniLM-L6-v2 |
+| `recursive_minilm` | Recursive (400 characters) | MiniLM-L6-v2 |
+| `fixed_openai` | Fixed-size (400 characters) | OpenAI text-embedding-3-small |
+| `recursive_openai` | Recursive (400 characters) | OpenAI text-embedding-3-small |
 
----
+The evaluation uses a technical document collection covering AI, machine learning, NLP, LLMs, and RAG, along with a dataset of 15 questions and their reference answers.
 
-## 🏗️ System Architecture
+## How it works
 
+The project is split into a few Python scripts so each part can be run and tested separately.
+
+1. **Data preparation (`data_prep.py`)** – Prepares the document collection and evaluation questions.
+2. **Chunking (`chunking.py`)** – Splits documents using fixed-size and recursive character splitting.
+3. **Embeddings and storage (`embed_and_upsert.py`)** – Generates embeddings and stores the document chunks in Pinecone.
+4. **Retrieval and generation (`generate_answers.py`)** – Retrieves the top 3 chunks for each question and generates an answer using the available LLM configuration.
+5. **Evaluation (`evaluate.py`)** – Calculates evaluation metrics and exports the results to CSV for comparison.
+
+## Evaluation metrics
+
+I used four metrics to understand different parts of the RAG pipeline:
+
+- **Context Precision:** Checks whether the retrieved chunks are relevant and ranked well.
+- **Context Recall:** Measures how much of the information needed to answer a question is present in the retrieved context.
+- **Faithfulness:** Checks whether the generated answer is supported by the retrieved context.
+- **Answer Relevancy:** Measures how well the generated answer addresses the original question.
+
+These metrics help identify whether a problem comes from retrieval or from answer generation, rather than judging the system only by its final response.
+
+## Results
+
+The following are the benchmark results from the 15-question evaluation dataset.
+
+| Configuration | Context Precision | Context Recall | Faithfulness | Answer Relevancy | Overall Score |
+|---|---:|---:|---:|---:|---:|
+| `recursive_minilm` | 0.8889 | 0.9667 | 1.0000 | 0.5528 | 0.8521 |
+| `fixed_minilm` | 0.8778 | 0.9000 | 1.0000 | 0.5416 | 0.8299 |
+| `fixed_openai` | 0.1667 | 0.3067 | 1.0000 | 0.4044 | 0.4694 |
+| `recursive_openai` | 0.0889 | 0.2044 | 1.0000 | 0.4656 | 0.4397 |
+
+### What I found
+
+The recursive chunking and MiniLM combination performed best in this evaluation, with an overall score of 0.8521.
+
+It also achieved the highest context recall (0.9667), meaning the retrieved chunks covered most of the information needed to answer the evaluation questions.
+
+MiniLM performed better than the OpenAI embedding model in these particular experiments. This doesn't necessarily mean it is better for every dataset; the results depend on the documents, queries, chunking configuration, and evaluation setup.
+
+Faithfulness was 1.0 for all four configurations, while answer relevancy was lower. This is a useful reminder that an answer can be grounded in the retrieved context without fully addressing what the user asked.
+
+## Tech stack
+
+- Python
+- LangChain
+- Pinecone
+- Hugging Face Sentence Transformers
+- OpenAI Embeddings
+- RAGAS
+- Pandas
+
+## Project structure
+
+```text
+.
+├── config.py
+├── data_prep.py
+├── chunking.py
+├── embed_and_upsert.py
+├── generate_answers.py
+├── evaluate.py
+├── .env.example
+├── requirements.txt
+└── README.md
 ```
-┌────────────────────────────────────────────────────────┐
-│ 1. Data Preparation (data_prep.py)                     │
-│    - Technical corpus on AI, ML, NLP, LLM, RAG         │
-│    - 15 Question-GroundTruth Answer eval dataset       │
-└──────────────────────────┬─────────────────────────────┘
-                           │
-┌──────────────────────────▼─────────────────────────────┐
-│ 2. Chunking Engine (chunking.py)                       │
-│    - Strategy A: Fixed-size Chunking (Character)       │
-│    - Strategy B: Recursive Chunking (Paragraph/Sentence)│
-└──────────────────────────┬─────────────────────────────┘
-                           │
-┌──────────────────────────▼─────────────────────────────┐
-│ 3. Embedding & Vector Store (embed_and_upsert.py)      │
-│    - Embeddings: MiniLM-L6-v2 (384d) & OpenAI (1536d)  │
-│    - Vector DB: Pinecone Serverless (Namespaces)       │
-└──────────────────────────┬─────────────────────────────┘
-                           │
-┌──────────────────────────▼─────────────────────────────┐
-│ 4. Retrieval & Answer Generation (generate_answers.py) │
-│    - Top-k=3 chunk retrieval per combo                 │
-│    - LLM grounded generation                           │
-└──────────────────────────┬─────────────────────────────┘
-                           │
-┌──────────────────────────▼─────────────────────────────┐
-│ 5. RAGAS Evaluation Engine (evaluate.py)               │
-│    - Context Precision, Recall, Faithfulness, Relevancy│
-│    - Exports results to CSV                            │
-└────────────────────────────────────────────────────────┘
+
+## Getting started
+
+### 1. Clone the repository
+
+```bash
+git clone <your-repository-url>
+cd <your-repository-folder>
 ```
 
----
-
-## ⚡ Quick Start & Setup
-
-### 1. Clone & Install Dependencies
+### 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Configure Environment Variables
+### 3. Set up environment variables
 
-Create a `.env` file in the root directory (or copy `.env.example`):
-
-```bash
-cp .env.example .env
-```
-
-Fill in your API keys:
+Create a `.env` file based on `.env.example` and add the required API keys.
 
 ```env
-PINECONE_API_KEY=your_pinecone_api_key_here
+PINECONE_API_KEY=your_pinecone_api_key
 PINECONE_CLOUD=aws
 PINECONE_REGION=us-east-1
-OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_API_KEY=your_openai_api_key
 ```
 
-*Note: The pipeline includes built-in offline fallbacks so it runs seamlessly even if API keys are not provided.*
+Keep your `.env` file private and never commit API keys to GitHub.
 
----
+### 4. Run the pipeline
 
-## 🚀 Execution Guide (Run in Order)
-
-Execute the scripts sequentially to complete the evaluation:
+Run the scripts in the following order:
 
 ```bash
-# Step 1: Download & prepare evaluation dataset
 python data_prep.py
-
-# Step 2: Split documents, generate embeddings, and upsert to Pinecone
 python embed_and_upsert.py
-
-# Step 3: Retrieve top-k context chunks and generate LLM answers
 python generate_answers.py
-
-# Step 4: Compute RAGAS metrics & generate comparison report
 python evaluate.py
 ```
 
----
+After evaluation, check the generated CSV files to compare the results across configurations.
 
-## 📊 RAGAS Metrics Explained (Interview Reference)
+## Possible improvements
 
-Understanding how RAG metrics work is essential for technical interviews:
-
-1. **Context Precision**:
-   - **What it measures**: Signal-to-noise ratio of retrieved chunks and whether relevant context chunks are ranked near top-1.
-   - **Formula**: Average Precision@K of relevant chunks in the retrieved context list.
-   - **Why it matters**: Ensures the LLM receives the most relevant information at the start of its context window, minimizing context distillation noise.
-
-2. **Context Recall**:
-   - **What it measures**: Extent to which all necessary ground-truth facts are captured by the retrieved context chunks.
-   - **Formula**: $\frac{\text{Ground Truth Statements Attributable to Context}}{\text{Total Ground Truth Statements}}$
-   - **Why it matters**: Detects retrieval under-coverage (missing critical information needed to construct complete answers).
-
-3. **Faithfulness**:
-   - **What it measures**: Degree of factual grounding in the generated answer (detecting hallucinations).
-   - **Formula**: $\frac{\text{Answer Claims Supported by Context}}{\text{Total Claims in Answer}}$
-   - **Why it matters**: Ensures the generator does not fabricate details outside the retrieved knowledge base.
-
-4. **Answer Relevancy**:
-   - **What it measures**: Direct pertinence of the generated response to the user's prompt (query intent alignment).
-   - **Formula**: Semantic similarity / intent alignment between generated response and query.
-   - **Why it matters**: Ensures answers stay focused on what was asked without tangential rambling.
-
----
-
-## 📈 Evaluation Results & Key Takeaways
-
-### Benchmark Results Table
-
-| Combination | Chunking Strategy | Embedding Model | Context Precision | Context Recall | Faithfulness | Answer Relevancy | Overall RAGAS Score |
-| :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| **`recursive_minilm`** | **Recursive (400)** | **MiniLM-L6-v2 (384d)** | **0.8889** | **0.9667** | **1.0000** | **0.5528** | **0.8521** |
-| `fixed_minilm` | Fixed-size (400) | MiniLM-L6-v2 (384d) | 0.8778 | 0.9000 | 1.0000 | 0.5416 | 0.8299 |
-| `fixed_openai` | Fixed-size (400) | OpenAI-v3-small (1536d) | 0.1667 | 0.3067 | 1.0000 | 0.4044 | 0.4694 |
-| `recursive_openai` | Recursive (400) | OpenAI-v3-small (1536d) | 0.0889 | 0.2044 | 1.0000 | 0.4656 | 0.4397 |
-
-### 💡 Key Takeaway & Analysis
-- **Winning Combination**: **`recursive_minilm`** achieved the highest Overall RAGAS Score (**0.8521**), outperforming fixed-size chunking across both Context Precision (**0.8889**) and Context Recall (**0.9667**).
-- **Why Recursive Chunking Won**: Recursive character splitting respects natural paragraph and sentence boundaries (`\n\n`, `\n`, `. `), keeping complete semantic concepts intact within single chunks rather than truncating sentences mid-thought.
-- **Embedding Alignment**: `all-MiniLM-L6-v2` demonstrated tight, dense cosine similarity clustering for technical definitions, producing superior retrieval precision on domain-specific AI/ML terminology compared to un-tuned generic embeddings.
-
----
-
-## 📂 Repository Structure
-
-```
-.
-├── config.py              # Central configuration & parameters
-├── data_prep.py           # Corpus & 15-question eval dataset preparation
-├── chunking.py            # Fixed-size vs Recursive chunking implementations
-├── embed_and_upsert.py    # MiniLM & OpenAI embeddings + Pinecone vector store
-├── generate_answers.py    # Top-k retrieval & LLM answer generation
-├── evaluate.py            # RAGAS metrics evaluation engine & CSV exporter
-├── .env.example           # Environment template
-├── requirements.txt       # Dependencies
-└── README.md              # Project documentation & interview guide
-```
+- Increase the size and diversity of the evaluation dataset.
+- Test different chunk sizes and overlap settings.
+- Add regression tests to catch changes in retrieval quality.
+- Evaluate retrieval and generation separately to identify failure points.
+- Compare performance, latency, and API costs alongside evaluation scores.
