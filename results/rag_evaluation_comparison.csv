@@ -1,0 +1,5 @@
+Combination,Chunking Strategy,Embedding Model,Context Precision,Context Recall,Faithfulness,Answer Relevancy,Overall RAGAS Score
+recursive_minilm,Recursive (400),MiniLM-L6-v2 (384d),0.8889,0.9667,1.0,0.5528,0.8521
+fixed_minilm,Fixed-size (400),MiniLM-L6-v2 (384d),0.8778,0.9,1.0,0.5416,0.8299
+fixed_openai,Fixed-size (400),OpenAI-v3-small (1536d),0.1444,0.24,1.0,0.4107,0.4488
+recursive_openai,Recursive (400),OpenAI-v3-small (1536d),0.0222,0.0,1.0,0.4546,0.3692

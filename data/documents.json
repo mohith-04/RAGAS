@@ -1,0 +1,68 @@
+[
+  {
+    "id": "doc_1",
+    "title": "Artificial Intelligence Overview",
+    "topic": "AI Fundamentals",
+    "text": "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. Core subfields of AI include Machine Learning (ML), Computer Vision, Natural Language Processing (NLP), and Robotics. AI systems leverage algorithms, data, and computing power to perform tasks such as visual perception, speech recognition, decision-making, and language translation. Rule-based systems rely on explicit expert logic, whereas modern data-driven AI learns representations directly from large scale unstructured datasets using deep neural networks."
+  },
+  {
+    "id": "doc_2",
+    "title": "Machine Learning and Neural Networks",
+    "topic": "Machine Learning",
+    "text": "Machine Learning is a branch of AI focused on building applications that learn from data and improve their performance over time without being explicitly programmed. Supervised learning algorithms learn from labeled training datasets to map input features to output targets (e.g., classification and regression). Unsupervised learning discovers hidden patterns, clusters, or representations in unlabeled data (e.g., K-means, PCA). Reinforcement learning trains agents to make sequences of decisions by interacting with an environment to maximize cumulative reward. Deep Learning utilizes multi-layered artificial neural networks (ANNs) to capture non-linear patterns in high-dimensional data."
+  },
+  {
+    "id": "doc_3",
+    "title": "Natural Language Processing and Transformers",
+    "topic": "NLP",
+    "text": "Natural Language Processing (NLP) enables computers to analyze, interpret, and generate human language. Traditional NLP relied on n-grams, TF-IDF, and recurrent neural networks (RNNs/LSTMs). The introduction of the Transformer architecture in 2017 ('Attention Is All You Need' by Vaswani et al.) revolutionized NLP. Transformers replace sequential recurrent processing with a self-attention mechanism, allowing parallel processing across entire text sequences. Self-attention dynamically calculates context weights between all token pairs, allowing models like BERT and GPT to capture long-range dependencies far more effectively than traditional RNNs."
+  },
+  {
+    "id": "doc_4",
+    "title": "Large Language Models and Generative AI",
+    "topic": "LLMs",
+    "text": "Large Language Models (LLMs) are deep learning models trained on trillions of text tokens using self-supervised objectives (such as next-token prediction or masked language modeling). Prominent examples include OpenAI's GPT-4, Google's Gemini, and Meta's Llama. LLMs exhibit emergent capabilities, including multi-step reasoning, code generation, and in-context learning through prompt engineering. However, LLMs suffer from notable limitations, such as factual hallucination, knowledge staleness due to fixed training cutoffs, and lack of access to private enterprise data stores."
+  },
+  {
+    "id": "doc_5",
+    "title": "Retrieval-Augmented Generation (RAG)",
+    "topic": "RAG Architecture",
+    "text": "Retrieval-Augmented Generation (RAG) is an architectural framework designed to mitigate LLM hallucinations and knowledge cutoff limitations. RAG connects an generative LLM to an external knowledge vector database (e.g., Pinecone, Chroma). When a user submits a query, the RAG system first converts the query into a dense embedding, searches the vector store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt. The LLM then synthesizes a grounded, factual answer based strictly on the retrieved context (Generation phase). RAG ensures privacy, real-time factual updates, and verifiable source attribution without expensive model fine-tuning."
+  },
+  {
+    "id": "doc_6",
+    "title": "Vector Databases and Dense Embeddings",
+    "topic": "Vector Stores",
+    "text": "Dense vector embeddings represent unstructured text, images, or audio as numerical vectors in a continuous high-dimensional space. Models like sentence-transformers (all-MiniLM-L6-v2) or OpenAI text-embedding-3-small map semantically similar sentences to nearby vector coordinates. Vector databases like Pinecone are optimized for fast Approximate Nearest Neighbor (ANN) search across millions of vectors using similarity metrics such as Cosine Similarity, Dot Product, or Euclidean Distance. Pinecone serverless indexes support multi-tenant separation using namespaces, allowing isolated chunking and embedding experiments within a single database."
+  },
+  {
+    "id": "doc_7",
+    "title": "RAG Evaluation and RAGAS Framework",
+    "topic": "Evaluation Metrics",
+    "text": "Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy. RAGAS (Retrieval-Augmented Generation Assessment) is an open-source evaluation framework providing automated metrics without needing human annotators. Key RAGAS metrics include: 1. Context Precision: Measures if retrieved context chunks relevant to the question are ranked near the top. 2. Context Recall: Measures if all relevant ground truth information was retrieved in the context chunks. 3. Faithfulness: Evaluates if the generated answer is strictly derived from the retrieved context (checking for hallucinations). 4. Answer Relevancy: Measures how directly pertinent the generated response is to the user's initial prompt."
+  },
+  {
+    "id": "wiki_1",
+    "title": "Wikipedia: Artificial intelligence",
+    "topic": "Artificial intelligence",
+    "text": "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals."
+  },
+  {
+    "id": "wiki_2",
+    "title": "Wikipedia: Machine learning",
+    "topic": "Machine learning",
+    "text": "Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalize to unseen data, and thus perform tasks without being explicitly programmed."
+  },
+  {
+    "id": "wiki_3",
+    "title": "Wikipedia: Natural language processing",
+    "topic": "Natural language processing",
+    "text": "Natural language processing (NLP) is the processing of natural language information by a computer. NLP is a subfield of computer science and is closely associated with artificial intelligence. NLP is also related to information retrieval, knowledge representation, computational linguistics, and linguistics more broadly."
+  },
+  {
+    "id": "wiki_4",
+    "title": "Wikipedia: Large language model",
+    "topic": "Large language model",
+    "text": "A large language model (LLM) is an AI model trained on a vast amount of text for natural language processing tasks, especially language generation. LLMs can typically generate, summarize, translate, and analyze text in many contexts. They are the basis for many modern chatbots, such as ChatGPT, Claude, Gemini, Grok, and DeepSeek."
+  }
+]

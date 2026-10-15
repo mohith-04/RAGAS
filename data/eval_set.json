@@ -1,0 +1,92 @@
+[
+  {
+    "id": "q1",
+    "question": "What is Artificial Intelligence and what are its core subfields?",
+    "ground_truth": "Artificial Intelligence is the simulation of human intelligence in machines. Its core subfields include Machine Learning, Computer Vision, Natural Language Processing, and Robotics.",
+    "topic": "AI Fundamentals"
+  },
+  {
+    "id": "q2",
+    "question": "How does data-driven modern AI differ from rule-based AI systems?",
+    "ground_truth": "Rule-based systems rely on explicit expert logic, whereas modern data-driven AI learns representations directly from large scale unstructured datasets using deep neural networks.",
+    "topic": "AI Fundamentals"
+  },
+  {
+    "id": "q3",
+    "question": "What is Supervised Learning and how does it work?",
+    "ground_truth": "Supervised learning is a branch of machine learning where algorithms learn from labeled training datasets to map input features to output targets for tasks like classification and regression.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "q4",
+    "question": "What is the difference between unsupervised learning and reinforcement learning?",
+    "ground_truth": "Unsupervised learning discovers hidden patterns or clusters in unlabeled data, whereas reinforcement learning trains agents to make sequential decisions by interacting with an environment to maximize cumulative reward.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "q5",
+    "question": "What core innovation made Transformer models superior to traditional RNNs and LSTMs?",
+    "ground_truth": "Transformers introduced self-attention mechanisms that enable parallel processing across text sequences, dynamically calculating context weights between token pairs to capture long-range dependencies better than sequential RNNs.",
+    "topic": "NLP"
+  },
+  {
+    "id": "q6",
+    "question": "Who introduced the Transformer architecture and in which paper?",
+    "ground_truth": "The Transformer architecture was introduced in 2017 by Vaswani et al. in the landmark paper 'Attention Is All You Need'.",
+    "topic": "NLP"
+  },
+  {
+    "id": "q7",
+    "question": "What are Large Language Models (LLMs) and how are they trained?",
+    "ground_truth": "LLMs are deep learning models trained on trillions of text tokens using self-supervised objectives such as next-token prediction or masked language modeling.",
+    "topic": "LLMs"
+  },
+  {
+    "id": "q8",
+    "question": "What are three major limitations of standalone Large Language Models?",
+    "ground_truth": "Three major limitations of standalone LLMs are factual hallucinations, knowledge staleness due to fixed training cutoffs, and lack of access to private enterprise data stores.",
+    "topic": "LLMs"
+  },
+  {
+    "id": "q9",
+    "question": "What is Retrieval-Augmented Generation (RAG) and what problem does it solve?",
+    "ground_truth": "RAG is an architectural framework that connects generative LLMs to external vector databases to mitigate factual hallucinations and knowledge cutoffs without model fine-tuning.",
+    "topic": "RAG Architecture"
+  },
+  {
+    "id": "q10",
+    "question": "What are the two main phases of a RAG pipeline?",
+    "ground_truth": "The two main phases of RAG are: 1) Retrieval phase (converting query into an embedding and fetching top-k relevant chunks from vector store) and 2) Generation phase (synthesizing a grounded answer using retrieved contexts).",
+    "topic": "RAG Architecture"
+  },
+  {
+    "id": "q11",
+    "question": "What are dense vector embeddings and how are they used?",
+    "ground_truth": "Dense vector embeddings represent unstructured text as numerical vectors in a continuous high-dimensional space where semantically similar text passages map to nearby vector coordinates.",
+    "topic": "Vector Stores"
+  },
+  {
+    "id": "q12",
+    "question": "What similarity metrics do vector databases use for Approximate Nearest Neighbor search?",
+    "ground_truth": "Vector databases use similarity metrics such as Cosine Similarity, Dot Product, and Euclidean Distance for Approximate Nearest Neighbor search.",
+    "topic": "Vector Stores"
+  },
+  {
+    "id": "q13",
+    "question": "What is RAGAS and why is it useful for evaluating RAG systems?",
+    "ground_truth": "RAGAS (Retrieval-Augmented Generation Assessment) is an open-source evaluation framework providing automated metrics to measure retrieval quality and generation accuracy without requiring human annotators.",
+    "topic": "Evaluation Metrics"
+  },
+  {
+    "id": "q14",
+    "question": "What is the difference between Context Precision and Context Recall in RAGAS?",
+    "ground_truth": "Context Precision measures if relevant context chunks are ranked near the top of retrieval results, whereas Context Recall measures if all relevant ground truth information was successfully retrieved in the contexts.",
+    "topic": "Evaluation Metrics"
+  },
+  {
+    "id": "q15",
+    "question": "How does RAGAS measure Faithfulness in a RAG pipeline?",
+    "ground_truth": "RAGAS measures Faithfulness by evaluating whether the generated answer is strictly derived from and supported by the retrieved context chunks, identifying any ungrounded hallucinations.",
+    "topic": "Evaluation Metrics"
+  }
+]

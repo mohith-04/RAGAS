@@ -1,0 +1,782 @@
+[
+  {
+    "question_id": "q1",
+    "question": "What is Artificial Intelligence and what are its core subfields?",
+    "ground_truth": "Artificial Intelligence is the simulation of human intelligence in machines. Its core subfields include Machine Learning, Computer Vision, Natural Language Processing, and Robotics.",
+    "topic": "AI Fundamentals",
+    "combination": "fixed_minilm",
+    "contexts": [
+      "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. Core subfields of AI include Machine Learning (ML), Computer Vision, Natural Language Processing (NLP), and Robotics. AI systems leverage algorithms, data, and computing power to perform tasks such as visual perception, speech recognition, decision-making, and",
+      "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use",
+      "Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalize to unseen data, and thus perform tasks without being explicitly programmed."
+    ],
+    "answer": "Based on retrieved context: Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans."
+  },
+  {
+    "question_id": "q2",
+    "question": "How does data-driven modern AI differ from rule-based AI systems?",
+    "ground_truth": "Rule-based systems rely on explicit expert logic, whereas modern data-driven AI learns representations directly from large scale unstructured datasets using deep neural networks.",
+    "topic": "AI Fundamentals",
+    "combination": "fixed_minilm",
+    "contexts": [
+      "speech recognition, decision-making, and language translation. Rule-based systems rely on explicit expert logic, whereas modern data-driven AI learns representations directly from large scale unstructured datasets using deep neural networks.",
+      "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. Core subfields of AI include Machine Learning (ML), Computer Vision, Natural Language Processing (NLP), and Robotics. AI systems leverage algorithms, data, and computing power to perform tasks such as visual perception, speech recognition, decision-making, and",
+      "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use"
+    ],
+    "answer": "Based on retrieved context: speech recognition, decision-making, and language translation."
+  },
+  {
+    "question_id": "q3",
+    "question": "What is Supervised Learning and how does it work?",
+    "ground_truth": "Supervised learning is a branch of machine learning where algorithms learn from labeled training datasets to map input features to output targets for tasks like classification and regression.",
+    "topic": "Machine Learning",
+    "combination": "fixed_minilm",
+    "contexts": [
+      "Machine Learning is a branch of AI focused on building applications that learn from data and improve their performance over time without being explicitly programmed. Supervised learning algorithms learn from labeled training datasets to map input features to output targets (e.g., classification and regression). Unsupervised learning discovers hidden patterns, clusters, or representations in",
+      "Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalize to unseen data, and thus perform tasks without being explicitly programmed.",
+      "hidden patterns, clusters, or representations in unlabeled data (e.g., K-means, PCA). Reinforcement learning trains agents to make sequences of decisions by interacting with an environment to maximize cumulative reward. Deep Learning utilizes multi-layered artificial neural networks (ANNs) to capture non-linear patterns in high-dimensional data."
+    ],
+    "answer": "Based on retrieved context: Machine Learning is a branch of AI focused on building applications that learn from data and improve their performance over time without being explicitly programmed."
+  },
+  {
+    "question_id": "q4",
+    "question": "What is the difference between unsupervised learning and reinforcement learning?",
+    "ground_truth": "Unsupervised learning discovers hidden patterns or clusters in unlabeled data, whereas reinforcement learning trains agents to make sequential decisions by interacting with an environment to maximize cumulative reward.",
+    "topic": "Machine Learning",
+    "combination": "fixed_minilm",
+    "contexts": [
+      "hidden patterns, clusters, or representations in unlabeled data (e.g., K-means, PCA). Reinforcement learning trains agents to make sequences of decisions by interacting with an environment to maximize cumulative reward. Deep Learning utilizes multi-layered artificial neural networks (ANNs) to capture non-linear patterns in high-dimensional data.",
+      "Machine Learning is a branch of AI focused on building applications that learn from data and improve their performance over time without being explicitly programmed. Supervised learning algorithms learn from labeled training datasets to map input features to output targets (e.g., classification and regression). Unsupervised learning discovers hidden patterns, clusters, or representations in",
+      "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. Core subfields of AI include Machine Learning (ML), Computer Vision, Natural Language Processing (NLP), and Robotics. AI systems leverage algorithms, data, and computing power to perform tasks such as visual perception, speech recognition, decision-making, and"
+    ],
+    "answer": "Based on retrieved context: hidden patterns, clusters, or representations in unlabeled data (e.g., K-means, PCA)."
+  },
+  {
+    "question_id": "q5",
+    "question": "What core innovation made Transformer models superior to traditional RNNs and LSTMs?",
+    "ground_truth": "Transformers introduced self-attention mechanisms that enable parallel processing across text sequences, dynamically calculating context weights between token pairs to capture long-range dependencies better than sequential RNNs.",
+    "topic": "NLP",
+    "combination": "fixed_minilm",
+    "contexts": [
+      "Natural Language Processing (NLP) enables computers to analyze, interpret, and generate human language. Traditional NLP relied on n-grams, TF-IDF, and recurrent neural networks (RNNs/LSTMs). The introduction of the Transformer architecture in 2017 ('Attention Is All You Need' by Vaswani et al.) revolutionized NLP. Transformers replace sequential recurrent processing with a self-attention",
+      "recurrent processing with a self-attention mechanism, allowing parallel processing across entire text sequences. Self-attention dynamically calculates context weights between all token pairs, allowing models like BERT and GPT to capture long-range dependencies far more effectively than traditional RNNs.",
+      "Large Language Models (LLMs) are deep learning models trained on trillions of text tokens using self-supervised objectives (such as next-token prediction or masked language modeling). Prominent examples include OpenAI's GPT-4, Google's Gemini, and Meta's Llama. LLMs exhibit emergent capabilities, including multi-step reasoning, code generation, and in-context learning through prompt engineering."
+    ],
+    "answer": "Based on retrieved context: Natural Language Processing (NLP) enables computers to analyze, interpret, and generate human language."
+  },
+  {
+    "question_id": "q6",
+    "question": "Who introduced the Transformer architecture and in which paper?",
+    "ground_truth": "The Transformer architecture was introduced in 2017 by Vaswani et al. in the landmark paper 'Attention Is All You Need'.",
+    "topic": "NLP",
+    "combination": "fixed_minilm",
+    "contexts": [
+      "Natural Language Processing (NLP) enables computers to analyze, interpret, and generate human language. Traditional NLP relied on n-grams, TF-IDF, and recurrent neural networks (RNNs/LSTMs). The introduction of the Transformer architecture in 2017 ('Attention Is All You Need' by Vaswani et al.) revolutionized NLP. Transformers replace sequential recurrent processing with a self-attention",
+      "Natural language processing (NLP) is the processing of natural language information by a computer. NLP is a subfield of computer science and is closely associated with artificial intelligence. NLP is also related to information retrieval, knowledge representation, computational linguistics, and linguistics more broadly.",
+      "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use"
+    ],
+    "answer": "Based on retrieved context: Natural Language Processing (NLP) enables computers to analyze, interpret, and generate human language."
+  },
+  {
+    "question_id": "q7",
+    "question": "What are Large Language Models (LLMs) and how are they trained?",
+    "ground_truth": "LLMs are deep learning models trained on trillions of text tokens using self-supervised objectives such as next-token prediction or masked language modeling.",
+    "topic": "LLMs",
+    "combination": "fixed_minilm",
+    "contexts": [
+      "A large language model (LLM) is an AI model trained on a vast amount of text for natural language processing tasks, especially language generation. LLMs can typically generate, summarize, translate, and analyze text in many contexts. They are the basis for many modern chatbots, such as ChatGPT, Claude, Gemini, Grok, and DeepSeek.",
+      "Large Language Models (LLMs) are deep learning models trained on trillions of text tokens using self-supervised objectives (such as next-token prediction or masked language modeling). Prominent examples include OpenAI's GPT-4, Google's Gemini, and Meta's Llama. LLMs exhibit emergent capabilities, including multi-step reasoning, code generation, and in-context learning through prompt engineering.",
+      "in-context learning through prompt engineering. However, LLMs suffer from notable limitations, such as factual hallucination, knowledge staleness due to fixed training cutoffs, and lack of access to private enterprise data stores."
+    ],
+    "answer": "Based on retrieved context: A large language model (LLM) is an AI model trained on a vast amount of text for natural language processing tasks, especially language generation."
+  },
+  {
+    "question_id": "q8",
+    "question": "What are three major limitations of standalone Large Language Models?",
+    "ground_truth": "Three major limitations of standalone LLMs are factual hallucinations, knowledge staleness due to fixed training cutoffs, and lack of access to private enterprise data stores.",
+    "topic": "LLMs",
+    "combination": "fixed_minilm",
+    "contexts": [
+      "A large language model (LLM) is an AI model trained on a vast amount of text for natural language processing tasks, especially language generation. LLMs can typically generate, summarize, translate, and analyze text in many contexts. They are the basis for many modern chatbots, such as ChatGPT, Claude, Gemini, Grok, and DeepSeek.",
+      "Large Language Models (LLMs) are deep learning models trained on trillions of text tokens using self-supervised objectives (such as next-token prediction or masked language modeling). Prominent examples include OpenAI's GPT-4, Google's Gemini, and Meta's Llama. LLMs exhibit emergent capabilities, including multi-step reasoning, code generation, and in-context learning through prompt engineering.",
+      "recurrent processing with a self-attention mechanism, allowing parallel processing across entire text sequences. Self-attention dynamically calculates context weights between all token pairs, allowing models like BERT and GPT to capture long-range dependencies far more effectively than traditional RNNs."
+    ],
+    "answer": "Based on retrieved context: A large language model (LLM) is an AI model trained on a vast amount of text for natural language processing tasks, especially language generation."
+  },
+  {
+    "question_id": "q9",
+    "question": "What is Retrieval-Augmented Generation (RAG) and what problem does it solve?",
+    "ground_truth": "RAG is an architectural framework that connects generative LLMs to external vector databases to mitigate factual hallucinations and knowledge cutoffs without model fine-tuning.",
+    "topic": "RAG Architecture",
+    "combination": "fixed_minilm",
+    "contexts": [
+      "Retrieval-Augmented Generation (RAG) is an architectural framework designed to mitigate LLM hallucinations and knowledge cutoff limitations. RAG connects an generative LLM to an external knowledge vector database (e.g., Pinecone, Chroma). When a user submits a query, the RAG system first converts the query into a dense embedding, searches the vector store for the top-k most semantically similar",
+      "Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy. RAGAS (Retrieval-Augmented Generation Assessment) is an open-source evaluation framework providing automated metrics without needing human annotators. Key RAGAS metrics include: 1. Context Precision: Measures if retrieved context chunks relevant to the question are ranked near the top. 2. Context Recall:",
+      "store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt. The LLM then synthesizes a grounded, factual answer based strictly on the retrieved context (Generation phase). RAG ensures privacy, real-time factual updates, and verifiable source attribution without expensive model fine-tuning."
+    ],
+    "answer": "Based on retrieved context: Retrieval-Augmented Generation (RAG) is an architectural framework designed to mitigate LLM hallucinations and knowledge cutoff limitations."
+  },
+  {
+    "question_id": "q10",
+    "question": "What are the two main phases of a RAG pipeline?",
+    "ground_truth": "The two main phases of RAG are: 1) Retrieval phase (converting query into an embedding and fetching top-k relevant chunks from vector store) and 2) Generation phase (synthesizing a grounded answer using retrieved contexts).",
+    "topic": "RAG Architecture",
+    "combination": "fixed_minilm",
+    "contexts": [
+      "Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy. RAGAS (Retrieval-Augmented Generation Assessment) is an open-source evaluation framework providing automated metrics without needing human annotators. Key RAGAS metrics include: 1. Context Precision: Measures if retrieved context chunks relevant to the question are ranked near the top. 2. Context Recall:",
+      "store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt. The LLM then synthesizes a grounded, factual answer based strictly on the retrieved context (Generation phase). RAG ensures privacy, real-time factual updates, and verifiable source attribution without expensive model fine-tuning.",
+      "Retrieval-Augmented Generation (RAG) is an architectural framework designed to mitigate LLM hallucinations and knowledge cutoff limitations. RAG connects an generative LLM to an external knowledge vector database (e.g., Pinecone, Chroma). When a user submits a query, the RAG system first converts the query into a dense embedding, searches the vector store for the top-k most semantically similar"
+    ],
+    "answer": "Based on retrieved context: Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy."
+  },
+  {
+    "question_id": "q11",
+    "question": "What are dense vector embeddings and how are they used?",
+    "ground_truth": "Dense vector embeddings represent unstructured text as numerical vectors in a continuous high-dimensional space where semantically similar text passages map to nearby vector coordinates.",
+    "topic": "Vector Stores",
+    "combination": "fixed_minilm",
+    "contexts": [
+      "Dense vector embeddings represent unstructured text, images, or audio as numerical vectors in a continuous high-dimensional space. Models like sentence-transformers (all-MiniLM-L6-v2) or OpenAI text-embedding-3-small map semantically similar sentences to nearby vector coordinates. Vector databases like Pinecone are optimized for fast Approximate Nearest Neighbor (ANN) search across millions of",
+      "Retrieval-Augmented Generation (RAG) is an architectural framework designed to mitigate LLM hallucinations and knowledge cutoff limitations. RAG connects an generative LLM to an external knowledge vector database (e.g., Pinecone, Chroma). When a user submits a query, the RAG system first converts the query into a dense embedding, searches the vector store for the top-k most semantically similar",
+      "Nearest Neighbor (ANN) search across millions of vectors using similarity metrics such as Cosine Similarity, Dot Product, or Euclidean Distance. Pinecone serverless indexes support multi-tenant separation using namespaces, allowing isolated chunking and embedding experiments within a single database."
+    ],
+    "answer": "Based on retrieved context: Dense vector embeddings represent unstructured text, images, or audio as numerical vectors in a continuous high-dimensional space."
+  },
+  {
+    "question_id": "q12",
+    "question": "What similarity metrics do vector databases use for Approximate Nearest Neighbor search?",
+    "ground_truth": "Vector databases use similarity metrics such as Cosine Similarity, Dot Product, and Euclidean Distance for Approximate Nearest Neighbor search.",
+    "topic": "Vector Stores",
+    "combination": "fixed_minilm",
+    "contexts": [
+      "Nearest Neighbor (ANN) search across millions of vectors using similarity metrics such as Cosine Similarity, Dot Product, or Euclidean Distance. Pinecone serverless indexes support multi-tenant separation using namespaces, allowing isolated chunking and embedding experiments within a single database.",
+      "Dense vector embeddings represent unstructured text, images, or audio as numerical vectors in a continuous high-dimensional space. Models like sentence-transformers (all-MiniLM-L6-v2) or OpenAI text-embedding-3-small map semantically similar sentences to nearby vector coordinates. Vector databases like Pinecone are optimized for fast Approximate Nearest Neighbor (ANN) search across millions of",
+      "Retrieval-Augmented Generation (RAG) is an architectural framework designed to mitigate LLM hallucinations and knowledge cutoff limitations. RAG connects an generative LLM to an external knowledge vector database (e.g., Pinecone, Chroma). When a user submits a query, the RAG system first converts the query into a dense embedding, searches the vector store for the top-k most semantically similar"
+    ],
+    "answer": "Based on retrieved context: Nearest Neighbor (ANN) search across millions of vectors using similarity metrics such as Cosine Similarity, Dot Product, or Euclidean Distance."
+  },
+  {
+    "question_id": "q13",
+    "question": "What is RAGAS and why is it useful for evaluating RAG systems?",
+    "ground_truth": "RAGAS (Retrieval-Augmented Generation Assessment) is an open-source evaluation framework providing automated metrics to measure retrieval quality and generation accuracy without requiring human annotators.",
+    "topic": "Evaluation Metrics",
+    "combination": "fixed_minilm",
+    "contexts": [
+      "Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy. RAGAS (Retrieval-Augmented Generation Assessment) is an open-source evaluation framework providing automated metrics without needing human annotators. Key RAGAS metrics include: 1. Context Precision: Measures if retrieved context chunks relevant to the question are ranked near the top. 2. Context Recall:",
+      "store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt. The LLM then synthesizes a grounded, factual answer based strictly on the retrieved context (Generation phase). RAG ensures privacy, real-time factual updates, and verifiable source attribution without expensive model fine-tuning.",
+      "Retrieval-Augmented Generation (RAG) is an architectural framework designed to mitigate LLM hallucinations and knowledge cutoff limitations. RAG connects an generative LLM to an external knowledge vector database (e.g., Pinecone, Chroma). When a user submits a query, the RAG system first converts the query into a dense embedding, searches the vector store for the top-k most semantically similar"
+    ],
+    "answer": "Based on retrieved context: Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy."
+  },
+  {
+    "question_id": "q14",
+    "question": "What is the difference between Context Precision and Context Recall in RAGAS?",
+    "ground_truth": "Context Precision measures if relevant context chunks are ranked near the top of retrieval results, whereas Context Recall measures if all relevant ground truth information was successfully retrieved in the contexts.",
+    "topic": "Evaluation Metrics",
+    "combination": "fixed_minilm",
+    "contexts": [
+      "Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy. RAGAS (Retrieval-Augmented Generation Assessment) is an open-source evaluation framework providing automated metrics without needing human annotators. Key RAGAS metrics include: 1. Context Precision: Measures if retrieved context chunks relevant to the question are ranked near the top. 2. Context Recall:",
+      "store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt. The LLM then synthesizes a grounded, factual answer based strictly on the retrieved context (Generation phase). RAG ensures privacy, real-time factual updates, and verifiable source attribution without expensive model fine-tuning.",
+      "are ranked near the top. 2. Context Recall: Measures if all relevant ground truth information was retrieved in the context chunks. 3. Faithfulness: Evaluates if the generated answer is strictly derived from the retrieved context (checking for hallucinations). 4. Answer Relevancy: Measures how directly pertinent the generated response is to the user's initial prompt."
+    ],
+    "answer": "Based on retrieved context: Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy."
+  },
+  {
+    "question_id": "q15",
+    "question": "How does RAGAS measure Faithfulness in a RAG pipeline?",
+    "ground_truth": "RAGAS measures Faithfulness by evaluating whether the generated answer is strictly derived from and supported by the retrieved context chunks, identifying any ungrounded hallucinations.",
+    "topic": "Evaluation Metrics",
+    "combination": "fixed_minilm",
+    "contexts": [
+      "Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy. RAGAS (Retrieval-Augmented Generation Assessment) is an open-source evaluation framework providing automated metrics without needing human annotators. Key RAGAS metrics include: 1. Context Precision: Measures if retrieved context chunks relevant to the question are ranked near the top. 2. Context Recall:",
+      "store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt. The LLM then synthesizes a grounded, factual answer based strictly on the retrieved context (Generation phase). RAG ensures privacy, real-time factual updates, and verifiable source attribution without expensive model fine-tuning.",
+      "are ranked near the top. 2. Context Recall: Measures if all relevant ground truth information was retrieved in the context chunks. 3. Faithfulness: Evaluates if the generated answer is strictly derived from the retrieved context (checking for hallucinations). 4. Answer Relevancy: Measures how directly pertinent the generated response is to the user's initial prompt."
+    ],
+    "answer": "Based on retrieved context: Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy."
+  },
+  {
+    "question_id": "q1",
+    "question": "What is Artificial Intelligence and what are its core subfields?",
+    "ground_truth": "Artificial Intelligence is the simulation of human intelligence in machines. Its core subfields include Machine Learning, Computer Vision, Natural Language Processing, and Robotics.",
+    "topic": "AI Fundamentals",
+    "combination": "recursive_minilm",
+    "contexts": [
+      "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. Core subfields of AI include Machine Learning (ML), Computer Vision, Natural Language Processing (NLP), and Robotics",
+      "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making",
+      ". It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals."
+    ],
+    "answer": "Based on retrieved context: Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans."
+  },
+  {
+    "question_id": "q2",
+    "question": "How does data-driven modern AI differ from rule-based AI systems?",
+    "ground_truth": "Rule-based systems rely on explicit expert logic, whereas modern data-driven AI learns representations directly from large scale unstructured datasets using deep neural networks.",
+    "topic": "AI Fundamentals",
+    "combination": "recursive_minilm",
+    "contexts": [
+      ". AI systems leverage algorithms, data, and computing power to perform tasks such as visual perception, speech recognition, decision-making, and language translation. Rule-based systems rely on explicit expert logic, whereas modern data-driven AI learns representations directly from large scale unstructured datasets using deep neural networks.",
+      "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. Core subfields of AI include Machine Learning (ML), Computer Vision, Natural Language Processing (NLP), and Robotics",
+      "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making"
+    ],
+    "answer": "Based on retrieved context: ."
+  },
+  {
+    "question_id": "q3",
+    "question": "What is Supervised Learning and how does it work?",
+    "ground_truth": "Supervised learning is a branch of machine learning where algorithms learn from labeled training datasets to map input features to output targets for tasks like classification and regression.",
+    "topic": "Machine Learning",
+    "combination": "recursive_minilm",
+    "contexts": [
+      "Machine Learning is a branch of AI focused on building applications that learn from data and improve their performance over time without being explicitly programmed. Supervised learning algorithms learn from labeled training datasets to map input features to output targets (e.g., classification and regression)",
+      "Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalize to unseen data, and thus perform tasks without being explicitly programmed.",
+      ". It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals."
+    ],
+    "answer": "Based on retrieved context: Machine Learning is a branch of AI focused on building applications that learn from data and improve their performance over time without being explicitly programmed."
+  },
+  {
+    "question_id": "q4",
+    "question": "What is the difference between unsupervised learning and reinforcement learning?",
+    "ground_truth": "Unsupervised learning discovers hidden patterns or clusters in unlabeled data, whereas reinforcement learning trains agents to make sequential decisions by interacting with an environment to maximize cumulative reward.",
+    "topic": "Machine Learning",
+    "combination": "recursive_minilm",
+    "contexts": [
+      ". Unsupervised learning discovers hidden patterns, clusters, or representations in unlabeled data (e.g., K-means, PCA). Reinforcement learning trains agents to make sequences of decisions by interacting with an environment to maximize cumulative reward. Deep Learning utilizes multi-layered artificial neural networks (ANNs) to capture non-linear patterns in high-dimensional data.",
+      "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. Core subfields of AI include Machine Learning (ML), Computer Vision, Natural Language Processing (NLP), and Robotics",
+      "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making"
+    ],
+    "answer": "Based on retrieved context: ."
+  },
+  {
+    "question_id": "q5",
+    "question": "What core innovation made Transformer models superior to traditional RNNs and LSTMs?",
+    "ground_truth": "Transformers introduced self-attention mechanisms that enable parallel processing across text sequences, dynamically calculating context weights between token pairs to capture long-range dependencies better than sequential RNNs.",
+    "topic": "NLP",
+    "combination": "recursive_minilm",
+    "contexts": [
+      ". Transformers replace sequential recurrent processing with a self-attention mechanism, allowing parallel processing across entire text sequences. Self-attention dynamically calculates context weights between all token pairs, allowing models like BERT and GPT to capture long-range dependencies far more effectively than traditional RNNs.",
+      "Natural Language Processing (NLP) enables computers to analyze, interpret, and generate human language. Traditional NLP relied on n-grams, TF-IDF, and recurrent neural networks (RNNs/LSTMs). The introduction of the Transformer architecture in 2017 ('Attention Is All You Need' by Vaswani et al.) revolutionized NLP",
+      "Large Language Models (LLMs) are deep learning models trained on trillions of text tokens using self-supervised objectives (such as next-token prediction or masked language modeling). Prominent examples include OpenAI's GPT-4, Google's Gemini, and Meta's Llama. LLMs exhibit emergent capabilities, including multi-step reasoning, code generation, and in-context learning through prompt engineering"
+    ],
+    "answer": "Based on retrieved context: ."
+  },
+  {
+    "question_id": "q6",
+    "question": "Who introduced the Transformer architecture and in which paper?",
+    "ground_truth": "The Transformer architecture was introduced in 2017 by Vaswani et al. in the landmark paper 'Attention Is All You Need'.",
+    "topic": "NLP",
+    "combination": "recursive_minilm",
+    "contexts": [
+      ". Transformers replace sequential recurrent processing with a self-attention mechanism, allowing parallel processing across entire text sequences. Self-attention dynamically calculates context weights between all token pairs, allowing models like BERT and GPT to capture long-range dependencies far more effectively than traditional RNNs.",
+      "Natural Language Processing (NLP) enables computers to analyze, interpret, and generate human language. Traditional NLP relied on n-grams, TF-IDF, and recurrent neural networks (RNNs/LSTMs). The introduction of the Transformer architecture in 2017 ('Attention Is All You Need' by Vaswani et al.) revolutionized NLP",
+      ". It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals."
+    ],
+    "answer": "Based on retrieved context: ."
+  },
+  {
+    "question_id": "q7",
+    "question": "What are Large Language Models (LLMs) and how are they trained?",
+    "ground_truth": "LLMs are deep learning models trained on trillions of text tokens using self-supervised objectives such as next-token prediction or masked language modeling.",
+    "topic": "LLMs",
+    "combination": "recursive_minilm",
+    "contexts": [
+      "A large language model (LLM) is an AI model trained on a vast amount of text for natural language processing tasks, especially language generation. LLMs can typically generate, summarize, translate, and analyze text in many contexts. They are the basis for many modern chatbots, such as ChatGPT, Claude, Gemini, Grok, and DeepSeek.",
+      "Large Language Models (LLMs) are deep learning models trained on trillions of text tokens using self-supervised objectives (such as next-token prediction or masked language modeling). Prominent examples include OpenAI's GPT-4, Google's Gemini, and Meta's Llama. LLMs exhibit emergent capabilities, including multi-step reasoning, code generation, and in-context learning through prompt engineering",
+      ". However, LLMs suffer from notable limitations, such as factual hallucination, knowledge staleness due to fixed training cutoffs, and lack of access to private enterprise data stores."
+    ],
+    "answer": "Based on retrieved context: A large language model (LLM) is an AI model trained on a vast amount of text for natural language processing tasks, especially language generation."
+  },
+  {
+    "question_id": "q8",
+    "question": "What are three major limitations of standalone Large Language Models?",
+    "ground_truth": "Three major limitations of standalone LLMs are factual hallucinations, knowledge staleness due to fixed training cutoffs, and lack of access to private enterprise data stores.",
+    "topic": "LLMs",
+    "combination": "recursive_minilm",
+    "contexts": [
+      "A large language model (LLM) is an AI model trained on a vast amount of text for natural language processing tasks, especially language generation. LLMs can typically generate, summarize, translate, and analyze text in many contexts. They are the basis for many modern chatbots, such as ChatGPT, Claude, Gemini, Grok, and DeepSeek.",
+      "Large Language Models (LLMs) are deep learning models trained on trillions of text tokens using self-supervised objectives (such as next-token prediction or masked language modeling). Prominent examples include OpenAI's GPT-4, Google's Gemini, and Meta's Llama. LLMs exhibit emergent capabilities, including multi-step reasoning, code generation, and in-context learning through prompt engineering",
+      ". However, LLMs suffer from notable limitations, such as factual hallucination, knowledge staleness due to fixed training cutoffs, and lack of access to private enterprise data stores."
+    ],
+    "answer": "Based on retrieved context: A large language model (LLM) is an AI model trained on a vast amount of text for natural language processing tasks, especially language generation."
+  },
+  {
+    "question_id": "q9",
+    "question": "What is Retrieval-Augmented Generation (RAG) and what problem does it solve?",
+    "ground_truth": "RAG is an architectural framework that connects generative LLMs to external vector databases to mitigate factual hallucinations and knowledge cutoffs without model fine-tuning.",
+    "topic": "RAG Architecture",
+    "combination": "recursive_minilm",
+    "contexts": [
+      "Retrieval-Augmented Generation (RAG) is an architectural framework designed to mitigate LLM hallucinations and knowledge cutoff limitations. RAG connects an generative LLM to an external knowledge vector database (e.g., Pinecone, Chroma)",
+      "Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy. RAGAS (Retrieval-Augmented Generation Assessment) is an open-source evaluation framework providing automated metrics without needing human annotators. Key RAGAS metrics include: 1. Context Precision: Measures if retrieved context chunks relevant to the question are ranked near the top. 2",
+      ". When a user submits a query, the RAG system first converts the query into a dense embedding, searches the vector store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt. The LLM then synthesizes a grounded, factual answer based strictly on the retrieved context (Generation phase)"
+    ],
+    "answer": "Based on retrieved context: Retrieval-Augmented Generation (RAG) is an architectural framework designed to mitigate LLM hallucinations and knowledge cutoff limitations."
+  },
+  {
+    "question_id": "q10",
+    "question": "What are the two main phases of a RAG pipeline?",
+    "ground_truth": "The two main phases of RAG are: 1) Retrieval phase (converting query into an embedding and fetching top-k relevant chunks from vector store) and 2) Generation phase (synthesizing a grounded answer using retrieved contexts).",
+    "topic": "RAG Architecture",
+    "combination": "recursive_minilm",
+    "contexts": [
+      "Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy. RAGAS (Retrieval-Augmented Generation Assessment) is an open-source evaluation framework providing automated metrics without needing human annotators. Key RAGAS metrics include: 1. Context Precision: Measures if retrieved context chunks relevant to the question are ranked near the top. 2",
+      ". RAG ensures privacy, real-time factual updates, and verifiable source attribution without expensive model fine-tuning.",
+      ". When a user submits a query, the RAG system first converts the query into a dense embedding, searches the vector store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt. The LLM then synthesizes a grounded, factual answer based strictly on the retrieved context (Generation phase)"
+    ],
+    "answer": "Based on retrieved context: Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy."
+  },
+  {
+    "question_id": "q11",
+    "question": "What are dense vector embeddings and how are they used?",
+    "ground_truth": "Dense vector embeddings represent unstructured text as numerical vectors in a continuous high-dimensional space where semantically similar text passages map to nearby vector coordinates.",
+    "topic": "Vector Stores",
+    "combination": "recursive_minilm",
+    "contexts": [
+      "Dense vector embeddings represent unstructured text, images, or audio as numerical vectors in a continuous high-dimensional space. Models like sentence-transformers (all-MiniLM-L6-v2) or OpenAI text-embedding-3-small map semantically similar sentences to nearby vector coordinates",
+      ". When a user submits a query, the RAG system first converts the query into a dense embedding, searches the vector store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt. The LLM then synthesizes a grounded, factual answer based strictly on the retrieved context (Generation phase)",
+      ". Vector databases like Pinecone are optimized for fast Approximate Nearest Neighbor (ANN) search across millions of vectors using similarity metrics such as Cosine Similarity, Dot Product, or Euclidean Distance. Pinecone serverless indexes support multi-tenant separation using namespaces, allowing isolated chunking and embedding experiments within a single database."
+    ],
+    "answer": "Based on retrieved context: Dense vector embeddings represent unstructured text, images, or audio as numerical vectors in a continuous high-dimensional space."
+  },
+  {
+    "question_id": "q12",
+    "question": "What similarity metrics do vector databases use for Approximate Nearest Neighbor search?",
+    "ground_truth": "Vector databases use similarity metrics such as Cosine Similarity, Dot Product, and Euclidean Distance for Approximate Nearest Neighbor search.",
+    "topic": "Vector Stores",
+    "combination": "recursive_minilm",
+    "contexts": [
+      ". Vector databases like Pinecone are optimized for fast Approximate Nearest Neighbor (ANN) search across millions of vectors using similarity metrics such as Cosine Similarity, Dot Product, or Euclidean Distance. Pinecone serverless indexes support multi-tenant separation using namespaces, allowing isolated chunking and embedding experiments within a single database.",
+      "Dense vector embeddings represent unstructured text, images, or audio as numerical vectors in a continuous high-dimensional space. Models like sentence-transformers (all-MiniLM-L6-v2) or OpenAI text-embedding-3-small map semantically similar sentences to nearby vector coordinates",
+      ". When a user submits a query, the RAG system first converts the query into a dense embedding, searches the vector store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt. The LLM then synthesizes a grounded, factual answer based strictly on the retrieved context (Generation phase)"
+    ],
+    "answer": "Based on retrieved context: ."
+  },
+  {
+    "question_id": "q13",
+    "question": "What is RAGAS and why is it useful for evaluating RAG systems?",
+    "ground_truth": "RAGAS (Retrieval-Augmented Generation Assessment) is an open-source evaluation framework providing automated metrics to measure retrieval quality and generation accuracy without requiring human annotators.",
+    "topic": "Evaluation Metrics",
+    "combination": "recursive_minilm",
+    "contexts": [
+      "Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy. RAGAS (Retrieval-Augmented Generation Assessment) is an open-source evaluation framework providing automated metrics without needing human annotators. Key RAGAS metrics include: 1. Context Precision: Measures if retrieved context chunks relevant to the question are ranked near the top. 2",
+      ". RAG ensures privacy, real-time factual updates, and verifiable source attribution without expensive model fine-tuning.",
+      "Retrieval-Augmented Generation (RAG) is an architectural framework designed to mitigate LLM hallucinations and knowledge cutoff limitations. RAG connects an generative LLM to an external knowledge vector database (e.g., Pinecone, Chroma)"
+    ],
+    "answer": "Based on retrieved context: Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy."
+  },
+  {
+    "question_id": "q14",
+    "question": "What is the difference between Context Precision and Context Recall in RAGAS?",
+    "ground_truth": "Context Precision measures if relevant context chunks are ranked near the top of retrieval results, whereas Context Recall measures if all relevant ground truth information was successfully retrieved in the contexts.",
+    "topic": "Evaluation Metrics",
+    "combination": "recursive_minilm",
+    "contexts": [
+      "Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy. RAGAS (Retrieval-Augmented Generation Assessment) is an open-source evaluation framework providing automated metrics without needing human annotators. Key RAGAS metrics include: 1. Context Precision: Measures if retrieved context chunks relevant to the question are ranked near the top. 2",
+      ". RAG ensures privacy, real-time factual updates, and verifiable source attribution without expensive model fine-tuning.",
+      ". 2. Context Recall: Measures if all relevant ground truth information was retrieved in the context chunks. 3. Faithfulness: Evaluates if the generated answer is strictly derived from the retrieved context (checking for hallucinations). 4. Answer Relevancy: Measures how directly pertinent the generated response is to the user's initial prompt."
+    ],
+    "answer": "Based on retrieved context: Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy."
+  },
+  {
+    "question_id": "q15",
+    "question": "How does RAGAS measure Faithfulness in a RAG pipeline?",
+    "ground_truth": "RAGAS measures Faithfulness by evaluating whether the generated answer is strictly derived from and supported by the retrieved context chunks, identifying any ungrounded hallucinations.",
+    "topic": "Evaluation Metrics",
+    "combination": "recursive_minilm",
+    "contexts": [
+      "Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy. RAGAS (Retrieval-Augmented Generation Assessment) is an open-source evaluation framework providing automated metrics without needing human annotators. Key RAGAS metrics include: 1. Context Precision: Measures if retrieved context chunks relevant to the question are ranked near the top. 2",
+      ". RAG ensures privacy, real-time factual updates, and verifiable source attribution without expensive model fine-tuning.",
+      ". 2. Context Recall: Measures if all relevant ground truth information was retrieved in the context chunks. 3. Faithfulness: Evaluates if the generated answer is strictly derived from the retrieved context (checking for hallucinations). 4. Answer Relevancy: Measures how directly pertinent the generated response is to the user's initial prompt."
+    ],
+    "answer": "Based on retrieved context: Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy."
+  },
+  {
+    "question_id": "q1",
+    "question": "What is Artificial Intelligence and what are its core subfields?",
+    "ground_truth": "Artificial Intelligence is the simulation of human intelligence in machines. Its core subfields include Machine Learning, Computer Vision, Natural Language Processing, and Robotics.",
+    "topic": "AI Fundamentals",
+    "combination": "fixed_openai",
+    "contexts": [
+      "store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt. The LLM then synthesizes a grounded, factual answer based strictly on the retrieved context (Generation phase). RAG ensures privacy, real-time factual updates, and verifiable source attribution without expensive model fine-tuning.",
+      "machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals.",
+      "Natural language processing (NLP) is the processing of natural language information by a computer. NLP is a subfield of computer science and is closely associated with artificial intelligence. NLP is also related to information retrieval, knowledge representation, computational linguistics, and linguistics more broadly."
+    ],
+    "answer": "Based on retrieved context: store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt."
+  },
+  {
+    "question_id": "q2",
+    "question": "How does data-driven modern AI differ from rule-based AI systems?",
+    "ground_truth": "Rule-based systems rely on explicit expert logic, whereas modern data-driven AI learns representations directly from large scale unstructured datasets using deep neural networks.",
+    "topic": "AI Fundamentals",
+    "combination": "fixed_openai",
+    "contexts": [
+      "are ranked near the top. 2. Context Recall: Measures if all relevant ground truth information was retrieved in the context chunks. 3. Faithfulness: Evaluates if the generated answer is strictly derived from the retrieved context (checking for hallucinations). 4. Answer Relevancy: Measures how directly pertinent the generated response is to the user's initial prompt.",
+      "Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalize to unseen data, and thus perform tasks without being explicitly programmed.",
+      "Large Language Models (LLMs) are deep learning models trained on trillions of text tokens using self-supervised objectives (such as next-token prediction or masked language modeling). Prominent examples include OpenAI's GPT-4, Google's Gemini, and Meta's Llama. LLMs exhibit emergent capabilities, including multi-step reasoning, code generation, and in-context learning through prompt engineering."
+    ],
+    "answer": "Based on retrieved context: are ranked near the top."
+  },
+  {
+    "question_id": "q3",
+    "question": "What is Supervised Learning and how does it work?",
+    "ground_truth": "Supervised learning is a branch of machine learning where algorithms learn from labeled training datasets to map input features to output targets for tasks like classification and regression.",
+    "topic": "Machine Learning",
+    "combination": "fixed_openai",
+    "contexts": [
+      "store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt. The LLM then synthesizes a grounded, factual answer based strictly on the retrieved context (Generation phase). RAG ensures privacy, real-time factual updates, and verifiable source attribution without expensive model fine-tuning.",
+      "in-context learning through prompt engineering. However, LLMs suffer from notable limitations, such as factual hallucination, knowledge staleness due to fixed training cutoffs, and lack of access to private enterprise data stores.",
+      "Retrieval-Augmented Generation (RAG) is an architectural framework designed to mitigate LLM hallucinations and knowledge cutoff limitations. RAG connects an generative LLM to an external knowledge vector database (e.g., Pinecone, Chroma). When a user submits a query, the RAG system first converts the query into a dense embedding, searches the vector store for the top-k most semantically similar"
+    ],
+    "answer": "Based on retrieved context: store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt."
+  },
+  {
+    "question_id": "q4",
+    "question": "What is the difference between unsupervised learning and reinforcement learning?",
+    "ground_truth": "Unsupervised learning discovers hidden patterns or clusters in unlabeled data, whereas reinforcement learning trains agents to make sequential decisions by interacting with an environment to maximize cumulative reward.",
+    "topic": "Machine Learning",
+    "combination": "fixed_openai",
+    "contexts": [
+      "recurrent processing with a self-attention mechanism, allowing parallel processing across entire text sequences. Self-attention dynamically calculates context weights between all token pairs, allowing models like BERT and GPT to capture long-range dependencies far more effectively than traditional RNNs.",
+      "Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use",
+      "Natural Language Processing (NLP) enables computers to analyze, interpret, and generate human language. Traditional NLP relied on n-grams, TF-IDF, and recurrent neural networks (RNNs/LSTMs). The introduction of the Transformer architecture in 2017 ('Attention Is All You Need' by Vaswani et al.) revolutionized NLP. Transformers replace sequential recurrent processing with a self-attention"
+    ],
+    "answer": "Based on retrieved context: recurrent processing with a self-attention mechanism, allowing parallel processing across entire text sequences."
+  },
+  {
+    "question_id": "q5",
+    "question": "What core innovation made Transformer models superior to traditional RNNs and LSTMs?",
+    "ground_truth": "Transformers introduced self-attention mechanisms that enable parallel processing across text sequences, dynamically calculating context weights between token pairs to capture long-range dependencies better than sequential RNNs.",
+    "topic": "NLP",
+    "combination": "fixed_openai",
+    "contexts": [
+      "Nearest Neighbor (ANN) search across millions of vectors using similarity metrics such as Cosine Similarity, Dot Product, or Euclidean Distance. Pinecone serverless indexes support multi-tenant separation using namespaces, allowing isolated chunking and embedding experiments within a single database.",
+      "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. Core subfields of AI include Machine Learning (ML), Computer Vision, Natural Language Processing (NLP), and Robotics. AI systems leverage algorithms, data, and computing power to perform tasks such as visual perception, speech recognition, decision-making, and",
+      "recurrent processing with a self-attention mechanism, allowing parallel processing across entire text sequences. Self-attention dynamically calculates context weights between all token pairs, allowing models like BERT and GPT to capture long-range dependencies far more effectively than traditional RNNs."
+    ],
+    "answer": "Based on retrieved context: Nearest Neighbor (ANN) search across millions of vectors using similarity metrics such as Cosine Similarity, Dot Product, or Euclidean Distance."
+  },
+  {
+    "question_id": "q6",
+    "question": "Who introduced the Transformer architecture and in which paper?",
+    "ground_truth": "The Transformer architecture was introduced in 2017 by Vaswani et al. in the landmark paper 'Attention Is All You Need'.",
+    "topic": "NLP",
+    "combination": "fixed_openai",
+    "contexts": [
+      "A large language model (LLM) is an AI model trained on a vast amount of text for natural language processing tasks, especially language generation. LLMs can typically generate, summarize, translate, and analyze text in many contexts. They are the basis for many modern chatbots, such as ChatGPT, Claude, Gemini, Grok, and DeepSeek.",
+      "Large Language Models (LLMs) are deep learning models trained on trillions of text tokens using self-supervised objectives (such as next-token prediction or masked language modeling). Prominent examples include OpenAI's GPT-4, Google's Gemini, and Meta's Llama. LLMs exhibit emergent capabilities, including multi-step reasoning, code generation, and in-context learning through prompt engineering.",
+      "Retrieval-Augmented Generation (RAG) is an architectural framework designed to mitigate LLM hallucinations and knowledge cutoff limitations. RAG connects an generative LLM to an external knowledge vector database (e.g., Pinecone, Chroma). When a user submits a query, the RAG system first converts the query into a dense embedding, searches the vector store for the top-k most semantically similar"
+    ],
+    "answer": "Based on retrieved context: A large language model (LLM) is an AI model trained on a vast amount of text for natural language processing tasks, especially language generation."
+  },
+  {
+    "question_id": "q7",
+    "question": "What are Large Language Models (LLMs) and how are they trained?",
+    "ground_truth": "LLMs are deep learning models trained on trillions of text tokens using self-supervised objectives such as next-token prediction or masked language modeling.",
+    "topic": "LLMs",
+    "combination": "fixed_openai",
+    "contexts": [
+      "Natural language processing (NLP) is the processing of natural language information by a computer. NLP is a subfield of computer science and is closely associated with artificial intelligence. NLP is also related to information retrieval, knowledge representation, computational linguistics, and linguistics more broadly.",
+      "are ranked near the top. 2. Context Recall: Measures if all relevant ground truth information was retrieved in the context chunks. 3. Faithfulness: Evaluates if the generated answer is strictly derived from the retrieved context (checking for hallucinations). 4. Answer Relevancy: Measures how directly pertinent the generated response is to the user's initial prompt.",
+      "Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy. RAGAS (Retrieval-Augmented Generation Assessment) is an open-source evaluation framework providing automated metrics without needing human annotators. Key RAGAS metrics include: 1. Context Precision: Measures if retrieved context chunks relevant to the question are ranked near the top. 2. Context Recall:"
+    ],
+    "answer": "Based on retrieved context: Natural language processing (NLP) is the processing of natural language information by a computer."
+  },
+  {
+    "question_id": "q8",
+    "question": "What are three major limitations of standalone Large Language Models?",
+    "ground_truth": "Three major limitations of standalone LLMs are factual hallucinations, knowledge staleness due to fixed training cutoffs, and lack of access to private enterprise data stores.",
+    "topic": "LLMs",
+    "combination": "fixed_openai",
+    "contexts": [
+      "Natural Language Processing (NLP) enables computers to analyze, interpret, and generate human language. Traditional NLP relied on n-grams, TF-IDF, and recurrent neural networks (RNNs/LSTMs). The introduction of the Transformer architecture in 2017 ('Attention Is All You Need' by Vaswani et al.) revolutionized NLP. Transformers replace sequential recurrent processing with a self-attention",
+      "speech recognition, decision-making, and language translation. Rule-based systems rely on explicit expert logic, whereas modern data-driven AI learns representations directly from large scale unstructured datasets using deep neural networks.",
+      "Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalize to unseen data, and thus perform tasks without being explicitly programmed."
+    ],
+    "answer": "Based on retrieved context: Natural Language Processing (NLP) enables computers to analyze, interpret, and generate human language."
+  },
+  {
+    "question_id": "q9",
+    "question": "What is Retrieval-Augmented Generation (RAG) and what problem does it solve?",
+    "ground_truth": "RAG is an architectural framework that connects generative LLMs to external vector databases to mitigate factual hallucinations and knowledge cutoffs without model fine-tuning.",
+    "topic": "RAG Architecture",
+    "combination": "fixed_openai",
+    "contexts": [
+      "recurrent processing with a self-attention mechanism, allowing parallel processing across entire text sequences. Self-attention dynamically calculates context weights between all token pairs, allowing models like BERT and GPT to capture long-range dependencies far more effectively than traditional RNNs.",
+      "Retrieval-Augmented Generation (RAG) is an architectural framework designed to mitigate LLM hallucinations and knowledge cutoff limitations. RAG connects an generative LLM to an external knowledge vector database (e.g., Pinecone, Chroma). When a user submits a query, the RAG system first converts the query into a dense embedding, searches the vector store for the top-k most semantically similar",
+      "Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalize to unseen data, and thus perform tasks without being explicitly programmed."
+    ],
+    "answer": "Based on retrieved context: recurrent processing with a self-attention mechanism, allowing parallel processing across entire text sequences."
+  },
+  {
+    "question_id": "q10",
+    "question": "What are the two main phases of a RAG pipeline?",
+    "ground_truth": "The two main phases of RAG are: 1) Retrieval phase (converting query into an embedding and fetching top-k relevant chunks from vector store) and 2) Generation phase (synthesizing a grounded answer using retrieved contexts).",
+    "topic": "RAG Architecture",
+    "combination": "fixed_openai",
+    "contexts": [
+      "Natural language processing (NLP) is the processing of natural language information by a computer. NLP is a subfield of computer science and is closely associated with artificial intelligence. NLP is also related to information retrieval, knowledge representation, computational linguistics, and linguistics more broadly.",
+      "hidden patterns, clusters, or representations in unlabeled data (e.g., K-means, PCA). Reinforcement learning trains agents to make sequences of decisions by interacting with an environment to maximize cumulative reward. Deep Learning utilizes multi-layered artificial neural networks (ANNs) to capture non-linear patterns in high-dimensional data.",
+      "Natural Language Processing (NLP) enables computers to analyze, interpret, and generate human language. Traditional NLP relied on n-grams, TF-IDF, and recurrent neural networks (RNNs/LSTMs). The introduction of the Transformer architecture in 2017 ('Attention Is All You Need' by Vaswani et al.) revolutionized NLP. Transformers replace sequential recurrent processing with a self-attention"
+    ],
+    "answer": "Based on retrieved context: Natural language processing (NLP) is the processing of natural language information by a computer."
+  },
+  {
+    "question_id": "q11",
+    "question": "What are dense vector embeddings and how are they used?",
+    "ground_truth": "Dense vector embeddings represent unstructured text as numerical vectors in a continuous high-dimensional space where semantically similar text passages map to nearby vector coordinates.",
+    "topic": "Vector Stores",
+    "combination": "fixed_openai",
+    "contexts": [
+      "machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals.",
+      "Retrieval-Augmented Generation (RAG) is an architectural framework designed to mitigate LLM hallucinations and knowledge cutoff limitations. RAG connects an generative LLM to an external knowledge vector database (e.g., Pinecone, Chroma). When a user submits a query, the RAG system first converts the query into a dense embedding, searches the vector store for the top-k most semantically similar",
+      "hidden patterns, clusters, or representations in unlabeled data (e.g., K-means, PCA). Reinforcement learning trains agents to make sequences of decisions by interacting with an environment to maximize cumulative reward. Deep Learning utilizes multi-layered artificial neural networks (ANNs) to capture non-linear patterns in high-dimensional data."
+    ],
+    "answer": "Based on retrieved context: machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals."
+  },
+  {
+    "question_id": "q12",
+    "question": "What similarity metrics do vector databases use for Approximate Nearest Neighbor search?",
+    "ground_truth": "Vector databases use similarity metrics such as Cosine Similarity, Dot Product, and Euclidean Distance for Approximate Nearest Neighbor search.",
+    "topic": "Vector Stores",
+    "combination": "fixed_openai",
+    "contexts": [
+      "store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt. The LLM then synthesizes a grounded, factual answer based strictly on the retrieved context (Generation phase). RAG ensures privacy, real-time factual updates, and verifiable source attribution without expensive model fine-tuning.",
+      "Large Language Models (LLMs) are deep learning models trained on trillions of text tokens using self-supervised objectives (such as next-token prediction or masked language modeling). Prominent examples include OpenAI's GPT-4, Google's Gemini, and Meta's Llama. LLMs exhibit emergent capabilities, including multi-step reasoning, code generation, and in-context learning through prompt engineering.",
+      "Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy. RAGAS (Retrieval-Augmented Generation Assessment) is an open-source evaluation framework providing automated metrics without needing human annotators. Key RAGAS metrics include: 1. Context Precision: Measures if retrieved context chunks relevant to the question are ranked near the top. 2. Context Recall:"
+    ],
+    "answer": "Based on retrieved context: store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt."
+  },
+  {
+    "question_id": "q13",
+    "question": "What is RAGAS and why is it useful for evaluating RAG systems?",
+    "ground_truth": "RAGAS (Retrieval-Augmented Generation Assessment) is an open-source evaluation framework providing automated metrics to measure retrieval quality and generation accuracy without requiring human annotators.",
+    "topic": "Evaluation Metrics",
+    "combination": "fixed_openai",
+    "contexts": [
+      "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. Core subfields of AI include Machine Learning (ML), Computer Vision, Natural Language Processing (NLP), and Robotics. AI systems leverage algorithms, data, and computing power to perform tasks such as visual perception, speech recognition, decision-making, and",
+      "are ranked near the top. 2. Context Recall: Measures if all relevant ground truth information was retrieved in the context chunks. 3. Faithfulness: Evaluates if the generated answer is strictly derived from the retrieved context (checking for hallucinations). 4. Answer Relevancy: Measures how directly pertinent the generated response is to the user's initial prompt.",
+      "Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalize to unseen data, and thus perform tasks without being explicitly programmed."
+    ],
+    "answer": "Based on retrieved context: Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans."
+  },
+  {
+    "question_id": "q14",
+    "question": "What is the difference between Context Precision and Context Recall in RAGAS?",
+    "ground_truth": "Context Precision measures if relevant context chunks are ranked near the top of retrieval results, whereas Context Recall measures if all relevant ground truth information was successfully retrieved in the contexts.",
+    "topic": "Evaluation Metrics",
+    "combination": "fixed_openai",
+    "contexts": [
+      "store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt. The LLM then synthesizes a grounded, factual answer based strictly on the retrieved context (Generation phase). RAG ensures privacy, real-time factual updates, and verifiable source attribution without expensive model fine-tuning.",
+      "machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals.",
+      "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. Core subfields of AI include Machine Learning (ML), Computer Vision, Natural Language Processing (NLP), and Robotics. AI systems leverage algorithms, data, and computing power to perform tasks such as visual perception, speech recognition, decision-making, and"
+    ],
+    "answer": "Based on retrieved context: store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt."
+  },
+  {
+    "question_id": "q15",
+    "question": "How does RAGAS measure Faithfulness in a RAG pipeline?",
+    "ground_truth": "RAGAS measures Faithfulness by evaluating whether the generated answer is strictly derived from and supported by the retrieved context chunks, identifying any ungrounded hallucinations.",
+    "topic": "Evaluation Metrics",
+    "combination": "fixed_openai",
+    "contexts": [
+      "store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt. The LLM then synthesizes a grounded, factual answer based strictly on the retrieved context (Generation phase). RAG ensures privacy, real-time factual updates, and verifiable source attribution without expensive model fine-tuning.",
+      "Nearest Neighbor (ANN) search across millions of vectors using similarity metrics such as Cosine Similarity, Dot Product, or Euclidean Distance. Pinecone serverless indexes support multi-tenant separation using namespaces, allowing isolated chunking and embedding experiments within a single database.",
+      "Machine Learning is a branch of AI focused on building applications that learn from data and improve their performance over time without being explicitly programmed. Supervised learning algorithms learn from labeled training datasets to map input features to output targets (e.g., classification and regression). Unsupervised learning discovers hidden patterns, clusters, or representations in"
+    ],
+    "answer": "Based on retrieved context: store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt."
+  },
+  {
+    "question_id": "q1",
+    "question": "What is Artificial Intelligence and what are its core subfields?",
+    "ground_truth": "Artificial Intelligence is the simulation of human intelligence in machines. Its core subfields include Machine Learning, Computer Vision, Natural Language Processing, and Robotics.",
+    "topic": "AI Fundamentals",
+    "combination": "recursive_openai",
+    "contexts": [
+      "Large Language Models (LLMs) are deep learning models trained on trillions of text tokens using self-supervised objectives (such as next-token prediction or masked language modeling). Prominent examples include OpenAI's GPT-4, Google's Gemini, and Meta's Llama. LLMs exhibit emergent capabilities, including multi-step reasoning, code generation, and in-context learning through prompt engineering",
+      "Retrieval-Augmented Generation (RAG) is an architectural framework designed to mitigate LLM hallucinations and knowledge cutoff limitations. RAG connects an generative LLM to an external knowledge vector database (e.g., Pinecone, Chroma)",
+      ". When a user submits a query, the RAG system first converts the query into a dense embedding, searches the vector store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt. The LLM then synthesizes a grounded, factual answer based strictly on the retrieved context (Generation phase)"
+    ],
+    "answer": "Based on retrieved context: Large Language Models (LLMs) are deep learning models trained on trillions of text tokens using self-supervised objectives (such as next-token prediction or masked language modeling)."
+  },
+  {
+    "question_id": "q2",
+    "question": "How does data-driven modern AI differ from rule-based AI systems?",
+    "ground_truth": "Rule-based systems rely on explicit expert logic, whereas modern data-driven AI learns representations directly from large scale unstructured datasets using deep neural networks.",
+    "topic": "AI Fundamentals",
+    "combination": "recursive_openai",
+    "contexts": [
+      "Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalize to unseen data, and thus perform tasks without being explicitly programmed.",
+      ". Transformers replace sequential recurrent processing with a self-attention mechanism, allowing parallel processing across entire text sequences. Self-attention dynamically calculates context weights between all token pairs, allowing models like BERT and GPT to capture long-range dependencies far more effectively than traditional RNNs.",
+      "Retrieval-Augmented Generation (RAG) is an architectural framework designed to mitigate LLM hallucinations and knowledge cutoff limitations. RAG connects an generative LLM to an external knowledge vector database (e.g., Pinecone, Chroma)"
+    ],
+    "answer": "Based on retrieved context: Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalize to unseen data, and thus perform tasks without being explicitly programmed."
+  },
+  {
+    "question_id": "q3",
+    "question": "What is Supervised Learning and how does it work?",
+    "ground_truth": "Supervised learning is a branch of machine learning where algorithms learn from labeled training datasets to map input features to output targets for tasks like classification and regression.",
+    "topic": "Machine Learning",
+    "combination": "recursive_openai",
+    "contexts": [
+      ". Vector databases like Pinecone are optimized for fast Approximate Nearest Neighbor (ANN) search across millions of vectors using similarity metrics such as Cosine Similarity, Dot Product, or Euclidean Distance. Pinecone serverless indexes support multi-tenant separation using namespaces, allowing isolated chunking and embedding experiments within a single database.",
+      ". Transformers replace sequential recurrent processing with a self-attention mechanism, allowing parallel processing across entire text sequences. Self-attention dynamically calculates context weights between all token pairs, allowing models like BERT and GPT to capture long-range dependencies far more effectively than traditional RNNs.",
+      ". RAG ensures privacy, real-time factual updates, and verifiable source attribution without expensive model fine-tuning."
+    ],
+    "answer": "Based on retrieved context: ."
+  },
+  {
+    "question_id": "q4",
+    "question": "What is the difference between unsupervised learning and reinforcement learning?",
+    "ground_truth": "Unsupervised learning discovers hidden patterns or clusters in unlabeled data, whereas reinforcement learning trains agents to make sequential decisions by interacting with an environment to maximize cumulative reward.",
+    "topic": "Machine Learning",
+    "combination": "recursive_openai",
+    "contexts": [
+      "Natural Language Processing (NLP) enables computers to analyze, interpret, and generate human language. Traditional NLP relied on n-grams, TF-IDF, and recurrent neural networks (RNNs/LSTMs). The introduction of the Transformer architecture in 2017 ('Attention Is All You Need' by Vaswani et al.) revolutionized NLP",
+      ". However, LLMs suffer from notable limitations, such as factual hallucination, knowledge staleness due to fixed training cutoffs, and lack of access to private enterprise data stores.",
+      "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. Core subfields of AI include Machine Learning (ML), Computer Vision, Natural Language Processing (NLP), and Robotics"
+    ],
+    "answer": "Based on retrieved context: Natural Language Processing (NLP) enables computers to analyze, interpret, and generate human language."
+  },
+  {
+    "question_id": "q5",
+    "question": "What core innovation made Transformer models superior to traditional RNNs and LSTMs?",
+    "ground_truth": "Transformers introduced self-attention mechanisms that enable parallel processing across text sequences, dynamically calculating context weights between token pairs to capture long-range dependencies better than sequential RNNs.",
+    "topic": "NLP",
+    "combination": "recursive_openai",
+    "contexts": [
+      ". AI systems leverage algorithms, data, and computing power to perform tasks such as visual perception, speech recognition, decision-making, and language translation. Rule-based systems rely on explicit expert logic, whereas modern data-driven AI learns representations directly from large scale unstructured datasets using deep neural networks.",
+      ". Unsupervised learning discovers hidden patterns, clusters, or representations in unlabeled data (e.g., K-means, PCA). Reinforcement learning trains agents to make sequences of decisions by interacting with an environment to maximize cumulative reward. Deep Learning utilizes multi-layered artificial neural networks (ANNs) to capture non-linear patterns in high-dimensional data.",
+      ". When a user submits a query, the RAG system first converts the query into a dense embedding, searches the vector store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt. The LLM then synthesizes a grounded, factual answer based strictly on the retrieved context (Generation phase)"
+    ],
+    "answer": "Based on retrieved context: ."
+  },
+  {
+    "question_id": "q6",
+    "question": "Who introduced the Transformer architecture and in which paper?",
+    "ground_truth": "The Transformer architecture was introduced in 2017 by Vaswani et al. in the landmark paper 'Attention Is All You Need'.",
+    "topic": "NLP",
+    "combination": "recursive_openai",
+    "contexts": [
+      "Retrieval-Augmented Generation (RAG) is an architectural framework designed to mitigate LLM hallucinations and knowledge cutoff limitations. RAG connects an generative LLM to an external knowledge vector database (e.g., Pinecone, Chroma)",
+      ". Transformers replace sequential recurrent processing with a self-attention mechanism, allowing parallel processing across entire text sequences. Self-attention dynamically calculates context weights between all token pairs, allowing models like BERT and GPT to capture long-range dependencies far more effectively than traditional RNNs.",
+      "A large language model (LLM) is an AI model trained on a vast amount of text for natural language processing tasks, especially language generation. LLMs can typically generate, summarize, translate, and analyze text in many contexts. They are the basis for many modern chatbots, such as ChatGPT, Claude, Gemini, Grok, and DeepSeek."
+    ],
+    "answer": "Based on retrieved context: Retrieval-Augmented Generation (RAG) is an architectural framework designed to mitigate LLM hallucinations and knowledge cutoff limitations."
+  },
+  {
+    "question_id": "q7",
+    "question": "What are Large Language Models (LLMs) and how are they trained?",
+    "ground_truth": "LLMs are deep learning models trained on trillions of text tokens using self-supervised objectives such as next-token prediction or masked language modeling.",
+    "topic": "LLMs",
+    "combination": "recursive_openai",
+    "contexts": [
+      "Natural language processing (NLP) is the processing of natural language information by a computer. NLP is a subfield of computer science and is closely associated with artificial intelligence. NLP is also related to information retrieval, knowledge representation, computational linguistics, and linguistics more broadly.",
+      "Evaluating RAG pipelines requires assessing both retrieval quality and generation accuracy. RAGAS (Retrieval-Augmented Generation Assessment) is an open-source evaluation framework providing automated metrics without needing human annotators. Key RAGAS metrics include: 1. Context Precision: Measures if retrieved context chunks relevant to the question are ranked near the top. 2",
+      "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. Core subfields of AI include Machine Learning (ML), Computer Vision, Natural Language Processing (NLP), and Robotics"
+    ],
+    "answer": "Based on retrieved context: Natural language processing (NLP) is the processing of natural language information by a computer."
+  },
+  {
+    "question_id": "q8",
+    "question": "What are three major limitations of standalone Large Language Models?",
+    "ground_truth": "Three major limitations of standalone LLMs are factual hallucinations, knowledge staleness due to fixed training cutoffs, and lack of access to private enterprise data stores.",
+    "topic": "LLMs",
+    "combination": "recursive_openai",
+    "contexts": [
+      ". Vector databases like Pinecone are optimized for fast Approximate Nearest Neighbor (ANN) search across millions of vectors using similarity metrics such as Cosine Similarity, Dot Product, or Euclidean Distance. Pinecone serverless indexes support multi-tenant separation using namespaces, allowing isolated chunking and embedding experiments within a single database.",
+      "Retrieval-Augmented Generation (RAG) is an architectural framework designed to mitigate LLM hallucinations and knowledge cutoff limitations. RAG connects an generative LLM to an external knowledge vector database (e.g., Pinecone, Chroma)",
+      "Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalize to unseen data, and thus perform tasks without being explicitly programmed."
+    ],
+    "answer": "Based on retrieved context: ."
+  },
+  {
+    "question_id": "q9",
+    "question": "What is Retrieval-Augmented Generation (RAG) and what problem does it solve?",
+    "ground_truth": "RAG is an architectural framework that connects generative LLMs to external vector databases to mitigate factual hallucinations and knowledge cutoffs without model fine-tuning.",
+    "topic": "RAG Architecture",
+    "combination": "recursive_openai",
+    "contexts": [
+      ". AI systems leverage algorithms, data, and computing power to perform tasks such as visual perception, speech recognition, decision-making, and language translation. Rule-based systems rely on explicit expert logic, whereas modern data-driven AI learns representations directly from large scale unstructured datasets using deep neural networks.",
+      ". However, LLMs suffer from notable limitations, such as factual hallucination, knowledge staleness due to fixed training cutoffs, and lack of access to private enterprise data stores.",
+      ". When a user submits a query, the RAG system first converts the query into a dense embedding, searches the vector store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt. The LLM then synthesizes a grounded, factual answer based strictly on the retrieved context (Generation phase)"
+    ],
+    "answer": "Based on retrieved context: ."
+  },
+  {
+    "question_id": "q10",
+    "question": "What are the two main phases of a RAG pipeline?",
+    "ground_truth": "The two main phases of RAG are: 1) Retrieval phase (converting query into an embedding and fetching top-k relevant chunks from vector store) and 2) Generation phase (synthesizing a grounded answer using retrieved contexts).",
+    "topic": "RAG Architecture",
+    "combination": "recursive_openai",
+    "contexts": [
+      "Natural language processing (NLP) is the processing of natural language information by a computer. NLP is a subfield of computer science and is closely associated with artificial intelligence. NLP is also related to information retrieval, knowledge representation, computational linguistics, and linguistics more broadly.",
+      "Machine Learning is a branch of AI focused on building applications that learn from data and improve their performance over time without being explicitly programmed. Supervised learning algorithms learn from labeled training datasets to map input features to output targets (e.g., classification and regression)",
+      ". AI systems leverage algorithms, data, and computing power to perform tasks such as visual perception, speech recognition, decision-making, and language translation. Rule-based systems rely on explicit expert logic, whereas modern data-driven AI learns representations directly from large scale unstructured datasets using deep neural networks."
+    ],
+    "answer": "Based on retrieved context: Natural language processing (NLP) is the processing of natural language information by a computer."
+  },
+  {
+    "question_id": "q11",
+    "question": "What are dense vector embeddings and how are they used?",
+    "ground_truth": "Dense vector embeddings represent unstructured text as numerical vectors in a continuous high-dimensional space where semantically similar text passages map to nearby vector coordinates.",
+    "topic": "Vector Stores",
+    "combination": "recursive_openai",
+    "contexts": [
+      ". 2. Context Recall: Measures if all relevant ground truth information was retrieved in the context chunks. 3. Faithfulness: Evaluates if the generated answer is strictly derived from the retrieved context (checking for hallucinations). 4. Answer Relevancy: Measures how directly pertinent the generated response is to the user's initial prompt.",
+      ". It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals.",
+      ". Vector databases like Pinecone are optimized for fast Approximate Nearest Neighbor (ANN) search across millions of vectors using similarity metrics such as Cosine Similarity, Dot Product, or Euclidean Distance. Pinecone serverless indexes support multi-tenant separation using namespaces, allowing isolated chunking and embedding experiments within a single database."
+    ],
+    "answer": "Based on retrieved context: ."
+  },
+  {
+    "question_id": "q12",
+    "question": "What similarity metrics do vector databases use for Approximate Nearest Neighbor search?",
+    "ground_truth": "Vector databases use similarity metrics such as Cosine Similarity, Dot Product, and Euclidean Distance for Approximate Nearest Neighbor search.",
+    "topic": "Vector Stores",
+    "combination": "recursive_openai",
+    "contexts": [
+      "Natural Language Processing (NLP) enables computers to analyze, interpret, and generate human language. Traditional NLP relied on n-grams, TF-IDF, and recurrent neural networks (RNNs/LSTMs). The introduction of the Transformer architecture in 2017 ('Attention Is All You Need' by Vaswani et al.) revolutionized NLP",
+      "Large Language Models (LLMs) are deep learning models trained on trillions of text tokens using self-supervised objectives (such as next-token prediction or masked language modeling). Prominent examples include OpenAI's GPT-4, Google's Gemini, and Meta's Llama. LLMs exhibit emergent capabilities, including multi-step reasoning, code generation, and in-context learning through prompt engineering",
+      ". RAG ensures privacy, real-time factual updates, and verifiable source attribution without expensive model fine-tuning."
+    ],
+    "answer": "Based on retrieved context: Natural Language Processing (NLP) enables computers to analyze, interpret, and generate human language."
+  },
+  {
+    "question_id": "q13",
+    "question": "What is RAGAS and why is it useful for evaluating RAG systems?",
+    "ground_truth": "RAGAS (Retrieval-Augmented Generation Assessment) is an open-source evaluation framework providing automated metrics to measure retrieval quality and generation accuracy without requiring human annotators.",
+    "topic": "Evaluation Metrics",
+    "combination": "recursive_openai",
+    "contexts": [
+      "Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalize to unseen data, and thus perform tasks without being explicitly programmed.",
+      "A large language model (LLM) is an AI model trained on a vast amount of text for natural language processing tasks, especially language generation. LLMs can typically generate, summarize, translate, and analyze text in many contexts. They are the basis for many modern chatbots, such as ChatGPT, Claude, Gemini, Grok, and DeepSeek.",
+      ". 2. Context Recall: Measures if all relevant ground truth information was retrieved in the context chunks. 3. Faithfulness: Evaluates if the generated answer is strictly derived from the retrieved context (checking for hallucinations). 4. Answer Relevancy: Measures how directly pertinent the generated response is to the user's initial prompt."
+    ],
+    "answer": "Based on retrieved context: Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalize to unseen data, and thus perform tasks without being explicitly programmed."
+  },
+  {
+    "question_id": "q14",
+    "question": "What is the difference between Context Precision and Context Recall in RAGAS?",
+    "ground_truth": "Context Precision measures if relevant context chunks are ranked near the top of retrieval results, whereas Context Recall measures if all relevant ground truth information was successfully retrieved in the contexts.",
+    "topic": "Evaluation Metrics",
+    "combination": "recursive_openai",
+    "contexts": [
+      ". It is a field of research in engineering, mathematics, and computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximise their chances of achieving defined goals.",
+      "Retrieval-Augmented Generation (RAG) is an architectural framework designed to mitigate LLM hallucinations and knowledge cutoff limitations. RAG connects an generative LLM to an external knowledge vector database (e.g., Pinecone, Chroma)",
+      ". RAG ensures privacy, real-time factual updates, and verifiable source attribution without expensive model fine-tuning."
+    ],
+    "answer": "Based on retrieved context: ."
+  },
+  {
+    "question_id": "q15",
+    "question": "How does RAGAS measure Faithfulness in a RAG pipeline?",
+    "ground_truth": "RAGAS measures Faithfulness by evaluating whether the generated answer is strictly derived from and supported by the retrieved context chunks, identifying any ungrounded hallucinations.",
+    "topic": "Evaluation Metrics",
+    "combination": "recursive_openai",
+    "contexts": [
+      "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. Core subfields of AI include Machine Learning (ML), Computer Vision, Natural Language Processing (NLP), and Robotics",
+      "Large Language Models (LLMs) are deep learning models trained on trillions of text tokens using self-supervised objectives (such as next-token prediction or masked language modeling). Prominent examples include OpenAI's GPT-4, Google's Gemini, and Meta's Llama. LLMs exhibit emergent capabilities, including multi-step reasoning, code generation, and in-context learning through prompt engineering",
+      ". When a user submits a query, the RAG system first converts the query into a dense embedding, searches the vector store for the top-k most semantically similar document chunks (Retrieval phase), and appends these retrieved context chunks to the system prompt. The LLM then synthesizes a grounded, factual answer based strictly on the retrieved context (Generation phase)"
+    ],
+    "answer": "Based on retrieved context: Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans."
+  }
+]
